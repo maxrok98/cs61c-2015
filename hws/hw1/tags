@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASSERT_ERROR_MESSAGE	util.h	6;"	d
+COMMIT_ID_BYTES	beargit.h	9;"	d
+COMMIT_ID_SIZE	beargit.h	13;"	d
+FILENAME_SIZE	beargit.h	12;"	d
+MSG_SIZE	beargit.h	14;"	d
+beargit_add	beargit.c	/^int beargit_add(const char* filename) {$/;"	f
+beargit_commit	beargit.c	/^int beargit_commit(const char* msg) {$/;"	f
+beargit_init	beargit.c	/^int beargit_init(void) {$/;"	f
+beargit_log	beargit.c	/^int beargit_log() {$/;"	f
+beargit_rm	beargit.c	/^int beargit_rm(const char* filename) {$/;"	f
+beargit_status	beargit.c	/^int beargit_status() {$/;"	f
+check_filename	main.c	/^int check_filename(const char* filename) {$/;"	f
+check_initialized	main.c	/^int check_initialized(void) {$/;"	f
+fs_cp	util.h	/^static void fs_cp(const char* src, const char* dst) {$/;"	f
+fs_mkdir	util.h	/^static void fs_mkdir(const char* dirname) {$/;"	f
+fs_mv	util.h	/^static void fs_mv(const char* src, const char* dst) {$/;"	f
+fs_rm	util.h	/^static void fs_rm(const char* filename) {$/;"	f
+go_bears	beargit.c	/^const char* go_bears = "GO BEARS!";$/;"	v
+is_commit_msg_ok	beargit.c	/^int is_commit_msg_ok(const char* msg) {$/;"	f
+is_sane_path	util.h	/^int is_sane_path(const char* path) {$/;"	f
+main	main.c	/^int main(int argc, char **argv) {$/;"	f
+next_commit_id	beargit.c	/^void next_commit_id(char* commit_id) {$/;"	f
+read_string_from_file	util.h	/^static void read_string_from_file(const char* filename, char* str, int size) {$/;"	f
+std	Makefile	/^	gcc -std=c99 main.c beargit.c -o beargit$/;"	m
+write_string_to_file	util.h	/^static void write_string_to_file(const char* filename, const char* str) {$/;"	f
