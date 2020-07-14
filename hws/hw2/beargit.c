@@ -383,6 +383,14 @@ int beargit_branch() {
 int checkout_commit(const char* commit_id) {
   /* COMPLETE THE REST */
 
+  //write commit id that is being checked out into .prev
+  write_string_to_file(".beargit/.prev", commit_id);
+
+  if (strcmp(commit_id, "0000000000000000000000000000000000000000") == 0) {
+    write_string_to_file(".beargit/.index", "");
+    return 0;
+  }
+
   // delete all tracked files in directory
   FILE* files = fopen(".beargit/.index", "r");
   char line[FILENAME_SIZE];
@@ -408,8 +416,6 @@ int checkout_commit(const char* commit_id) {
   }
   fclose(files);
 
-  //write commit id that is being checked out into .prev
-  write_string_to_file(".beargit/.prev", commit_id);
     
   return 0;
 }
