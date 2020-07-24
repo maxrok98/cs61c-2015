@@ -1,3 +1,4 @@
 [submodule "projects/project1"]
 	path = projects/project1
 	url = https://github.com/maxrok98/proj1_starter
+
